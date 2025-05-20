@@ -27,10 +27,3 @@ mi_bool = 'Hola'
 print(type(mi_bool))
 mi_texto = -2j
 print(type(mi_texto))
-
-# ¿Forzamos el tipo?
-address: str = "Mi dirección"
-address = True
-address = 5
-address = 1.2
-print(type(address))
