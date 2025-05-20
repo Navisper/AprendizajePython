@@ -93,3 +93,13 @@ IMC = round(IMC, 1)#Redondea el resultado a 1 decimales
 print(f'El indice de masa corporal es:', IMC)#Imprime el indice de masa corporal
 
 #------------------------------------------ Fin Ejercicio 01.3 ------------------------------------------#
+
+'''
+comentarios dentro de tres comillas simples o dobles
+    son utilizados para realizar comentarios de varias lineas
+    o para realizar comentarios dentro del codigo
+    o para realizar comentarios dentro de una funcion
+    o para realizar comentarios dentro de una clase
+    o para realizar comentarios dentro de un modulo
+
+'''
