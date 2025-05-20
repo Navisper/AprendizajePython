@@ -1,0 +1,1 @@
+print('soy gay y no tengo manos')
