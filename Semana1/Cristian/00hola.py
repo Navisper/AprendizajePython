@@ -1,4 +1,4 @@
-print('me gusta el nepe')#----------------------------- Primeros ejercicio para aprender Python -----------------------------#
+#----------------------------- Primeros ejercicio para aprender Python -----------------------------#
 #----------------------------------------- Ejercicio 00 -----------------------------------------#
 
 #Imprimir en pantalla el mensaje "Hola mundo" y "Hola mundo 2" el mas usado en el mundo de la programacion pra aprender un nuevo lenguaje de programacion
