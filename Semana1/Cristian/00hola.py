@@ -70,4 +70,14 @@ print('4. A little message to your older, wiser, and programmer self: Keep pushi
 
 #------------------------------------------- Fin Ejercicio 00.3 -------------------------------------------#
 
+'''
+comentarios dentro de tres comillas simples o dobles
+    son utilizados para realizar comentarios de varias lineas
+    o para realizar comentarios dentro del codigo
+    o para realizar comentarios dentro de una funcion
+    o para realizar comentarios dentro de una clase
+    o para realizar comentarios dentro de un modulo
+
+'''
+
 #Fin del ejercicio 00 en donde se imprimen diferentes mensajes en pantalla usando la funcion print()
