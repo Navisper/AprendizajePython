@@ -1,35 +1,5 @@
 #----------------------------- Primeros ejercicio para aprender Python -----------------------------#
-#----------------------------------------- Ejercicio 01.1 -----------------------------------------#
-
-#Aqui veremos los tipos de datos en Python
-
-#Los tipos de datos son:
-    #1. Numeros enteros (int) un ejemplo es : (1, 2, 3, 4, 5)
-    #2. Numeros decimales (float) un ejemplo es : (1.0, 2.0, 3.0, 4.0, 5.0)
-    #3. Cadenas de texto (str) un ejemplo es : ('Hola', 'Mundo', 'Python')
-    #4. Booleanos (bool) un ejemplo es : (True, False)
-    #5. Listas (list) un ejemplo es : ([1, 2, 3], ['Hola', 'Mundo'], [True, False])
-
-#Ejemplo de los tipos de datos:
-#1. Numeros enteros(int)
-numero_entero = 5
-print('El numero entero es:', numero_entero)#int
-
-#2. Numeros decimales(float)
-numero_decimal = 5.5
-print('El numero decimal es:', numero_decimal)#float
-
-#3. Cadenas de texto(str)
-cadena_texto = 'Hola Mundo'
-print('La cadena de texto es:', cadena_texto)#str
-
-#4. Booleanos(bool)
-booleano = True
-print('El booleano es:', booleano, '\n')#bool
-
-#------------------------------------------ Fin Ejercicio 01.1 ------------------------------------------#
-
-#----------------------------------------- Inicio Ejercicio 01.2 -----------------------------------------#
+#----------------------------------------- Inicio Ejercicio 02.1 -----------------------------------------#
 
 #En python existen diferentes tipos de operadores aritmeticos, los cuales son utilizados para realizar operaciones matematicas entre numeros. Estos operadores son:
 
@@ -74,9 +44,9 @@ C = int((F - 32) / 1.8)#Covierte la respuesta en un entero y luego convierte la 
 
 print(f'La temperatura en grados centigrados es: {C}', '\n')#Imprime la temperatura en grados centigrados
 
-#------------------------------------------ Fin Ejercicio 01.2 ------------------------------------------#
+#------------------------------------------ Fin Ejercicio 02.2 ------------------------------------------#
 
-#----------------------------------------- Inicio Ejercicio 01.3 -----------------------------------------#
+#----------------------------------------- Inicio Ejercicio 02.3 -----------------------------------------#
 #Usando el operador aritmetico de potencia (**) realiza un programa que calcule el indice de masa corporal (IMC) usando la siguiente formula:
 #IMC = peso / (altura ** 2)
 
@@ -92,14 +62,4 @@ IMC = round(IMC, 1)#Redondea el resultado a 1 decimales
 
 print(f'El indice de masa corporal es:', IMC)#Imprime el indice de masa corporal
 
-#------------------------------------------ Fin Ejercicio 01.3 ------------------------------------------#
-
-'''
-comentarios dentro de tres comillas simples o dobles
-    son utilizados para realizar comentarios de varias lineas
-    o para realizar comentarios dentro del codigo
-    o para realizar comentarios dentro de una funcion
-    o para realizar comentarios dentro de una clase
-    o para realizar comentarios dentro de un modulo
-
-'''
+#------------------------------------------ Fin Ejercicio 02.3 ------------------------------------------#
