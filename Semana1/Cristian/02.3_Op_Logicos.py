@@ -31,3 +31,7 @@ print(3 < 4 or "Hola" < "Python")   # 3 es menor que 4 (True) o "Hola" es menor 
 # Es decir, si la condición es True, "not" la convierte en False, y si es False, la convierte en True.
 
 print(not(3 > 4))  # 3 > 4 es False, pero "not False" se convierte en True.
+
+
+#--------------------------------------------------------------------- Ejercicios ---------------------------------------------------------------------#
+#Ejercicios en el archivo Ejercicios.py
