@@ -22,16 +22,19 @@ import math
 #------------------------------------------ Solucion ------------------------------------------#
 
 # Ejercicio práctico:
-# Verificar si el tipo de dato de '10' (cadena) es igual al tipo de dato de 10 (entero).
+# Solicitar al usuario el número de años que ha vivido y calcular cuántos segundos ha vivido,
+# asumiendo que una persona puede vivir 100 años.
 
-print('\nVerifica si el tipo de dato de "10" es igual al tipo de dato de 10')
+print('\nCalcula cuántos segundos ha vivido una persona según años de vida')
 
 # Aquí colocarás la entrada de datos y cálculos
 
-d1 = str('10')
-d2 = int('10')
+years = int(input('Cuantos años haz vivido?: '))
 
+d = (years * 365 )
+h = (d * 24)
+m = (h * 60)
+s = (m * 60)
 
-print('10(cadena) es igual a 10(entero)?:', d1 == d2)
-
+print(f'Has vivido {years} años que equivalen a {d} dias, {h} horas, {m} minutos y {s} segundos')
 #-------------------------------------------- Fin --------------------------------------------#
