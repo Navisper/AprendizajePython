@@ -456,6 +456,9 @@ print('\nVerifica si int("9.8") es igual a 10')
 
 # Aquí colocarás la entrada de datos y cálculos
 
+num1 = print('El entero de 9.8 es: ', int(9.8))
+print('El entero de 9.8 es igual a 10?: ', (num1 == 10))
+
 #------------------------------------ Fin del Ejercicio 22 ------------------------------------#
 
 
@@ -469,6 +472,17 @@ print('\nCalcula el pago semanal según horas trabajadas y tarifa por hora')
 
 # Aquí colocarás la entrada de datos y cálculos
 
+h = int(input('Cuantas horas trabajas al dia?: '))
+d = int(input('cuantos dias a la semana trabajas?: '))
+t = int(input('Cuanto te pagan por hora?: '))
+
+salariod = (h * t)
+salarios = (salariod * d)
+
+print(f'Si trabajaste {h} horas a {t} la hora te pagaran el dia a:', salariod)
+print(f'Si trabajas {d} dias en  la semana te pagaran:', salarios)
+
+
 #------------------------------------ Fin del Ejercicio 23 ------------------------------------#
 
 
@@ -481,6 +495,15 @@ print('\nCalcula el pago semanal según horas trabajadas y tarifa por hora')
 print('\nCalcula cuántos segundos ha vivido una persona según años de vida')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+years = int(input('Cuantos años haz vivido?: '))
+
+d = (years * 365 )
+h = (d * 24)
+m = (h * 60)
+s = (m * 60)
+
+print(f'Has vivido {years} que equivalen a {d} dias, {h} horas, {m} minutos y {s} segundos')
 
 #------------------------------------ Fin del Ejercicio 24 ------------------------------------#
 
@@ -498,6 +521,12 @@ print('\nCalcula cuántos segundos ha vivido una persona según años de vida')
 print('\nMuestra la tabla solicitada')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+print(1, 1, 1**1, 1**2, 1**3)
+print(2, 1, 2**1, 2**2, 2**3)
+print(3, 1, 3**1, 3**2, 3**3)
+print(4, 1, 4**1, 4**2, 4**3)
+print(5, 1, 5**1, 5**2, 5**3)
 
 #------------------------------------ Fin del Ejercicio 25 ------------------------------------#
 
