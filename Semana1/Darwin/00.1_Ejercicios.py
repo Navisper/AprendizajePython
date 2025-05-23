@@ -19,40 +19,81 @@ import math
 #   print(math.pi)        # Imprime 3.141592653589793
 # -------------------------------------------------------------------------------------------- #
 
+import math
+
 #------------------------------------------- Ejercicios Practicos -------------------------------------------#
 
 # ----------------------------------------- Inicio Ejercicio 1 ----------------------------------------- #
 # Realizar por consola una suma, resta, multiplicación y división entre dos números enteros
 # Fórmulas:
+A = 2
+B = 3
+print("-------------------------------------")
 #   suma = A + B
+print(f"Suma el número {A} + el {B} = {A + B}")
 #   resta = A - B
+print(f"Resta el número {A} - el {B} = {A - B}")
 #   multiplicación = A * B
+print(f"Multiplica el número {A} * el {B} = {A * B}")
 #   división = A / B
+print(f"Divide el número {A} / el {B} = {A / B}")
+print("-------------------------------------")
 # ------------------------------------------ Fin Ejercicio 1 ------------------------------------------ #
 
 # ----------------------------------------- Inicio Ejercicio 2 ----------------------------------------- #
 # Convertir grados Fahrenheit a grados Celsius
 # Fórmula: °C = (°F - 32) / 1.8
+celsius = (12 - 32) / 1.8
+print("-------------------------------------")
+print(f"12 grados Fahrenheit equivale a {celsius:.2f} grados Celsius")
+print("-------------------------------------")
 # ------------------------------------------ Fin Ejercicio 2 ------------------------------------------ #
 
 # ----------------------------------------- Inicio Ejercicio 3 ----------------------------------------- #
 # Calcular el índice de masa corporal (IMC)
 # Fórmula: IMC = peso / (altura ** 2)
+IMC = 82 / (1.85 ** 2)
+print("-------------------------------------")
+print(f"El índice de masa corporal (IMC) es: {IMC:.2f}")
+print("-------------------------------------")
 # ------------------------------------------ Fin Ejercicio 3 ------------------------------------------ #
 
 #-------------------------------------- Inicio del Ejercicio 4 --------------------------------------#
 # Calcular la hipotenusa de un triángulo dados dos catetos A y B
 # Fórmula: c = √(a² + b²)
+a = 2
+b = 2
+c = math.sqrt(a ** 2 + b ** 2)
+print("-------------------------------------")
+print(f"La hipotenusa del triángulo con catetos {a} y {b} es: {c:.2f}")
+print("-------------------------------------")
 #-------------------------------------- Fin del Ejercicio 4 --------------------------------------#
 
 #------------------------------------ Inicio del Ejercicio 5 ------------------------------------#
 # Calcular el total en dólares (USD) dada una cantidad en pesos colombianos, soles y reales
 # Fórmulas:
-#   usd_pesos = pesos / tasa_pesos
-#   usd_soles = soles / tasa_soles
-#   usd_reales = reales / tasa_reales
-#   total_usd = usd_pesos + usd_soles + usd_reales
+pesos = 4000
+soles = 100
+reales = 50
+
+tasa_pesos = 4000
+tasa_soles = 3.8
+tasa_reales = 5.1
+
+# Conversiones
+usd_pesos = pesos / tasa_pesos
+usd_soles = soles / tasa_soles
+usd_reales = reales / tasa_reales
+total_usd = usd_pesos + usd_soles + usd_reales
+
+print("-------------------------------------")
+print(f"Se convierten {pesos} pesos a USD: {usd_pesos:.2f}")
+print(f"Se convierten {soles} soles a USD: {usd_soles:.2f}")
+print(f"Se convierten {reales} reales a USD: {usd_reales:.2f}")
+print(f"Total en dólares: {usd_pesos:.2f} + {usd_soles:.2f} + {usd_reales:.2f} = {total_usd:.2f}")
+print("-------------------------------------")
 #-------------------------------------- Fin del Ejercicio 5 --------------------------------------#
+
 
 #------------------------------------ Inicio del Ejercicio 6 ------------------------------------#
 # Calcular el área de un triángulo dada la base y la altura
