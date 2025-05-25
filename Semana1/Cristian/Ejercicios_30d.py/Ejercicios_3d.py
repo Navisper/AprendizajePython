@@ -163,7 +163,10 @@ print('El perimetro del rectangulo es igual a:', round(2 * (long + anch),1))
 
 print('\nIngresa el radio del círculo para calcular su área y circunferencia')
 
-# Aquí colocarás la entrada de datos y cálculos
+R = float(input('Porfavor indica el radio del circulo: '))
+
+print('El area del circulo es igual a:', round(float((math.pi * (R**2))),2))
+print('La circunferencia del circulo es igual a:', round(float(2 * math.pi * R),2))
 
 #------------------------------------ Fin del Ejercicio 9 ------------------------------------#
 
@@ -176,10 +179,37 @@ print('\nIngresa el radio del círculo para calcular su área y circunferencia')
 
 print('\nCalcula la pendiente y las intersecciones de la recta y = 2x - 2')
 
-# Aquí colocarás la entrada de datos y cálculos
+# 1. Mostrar la ecuación
+print("\nEcuación de la recta: y = 2x - 2")
+
+# --------------------------
+# 3. DEFINICIÓN DE VARIABLES
+# --------------------------
+# Ecuación: y = mx + b
+m = 2   # pendiente
+b = -2  # intersección en Y
+
+# -----------------------------------
+# 4. CÁLCULOS MATEMÁTICOS REQUERIDOS
+# -----------------------------------
+
+# Intersección en Y (cuando x = 0)
+x_intercept_y = 0
+y_intercept_y = m * x_intercept_y + b
+
+# Intersección en X (cuando y = 0)
+# 0 = mx + b => mx = -b => x = -b / m
+x_intercept_x = -b / m
+y_intercept_x = 0
+
+# -------------------------
+# 5. IMPRESIÓN DE RESULTADOS
+# -------------------------
+print("Pendiente (slope):", m)
+print("Intersección en Y: (", x_intercept_y, ",", y_intercept_y, ")")
+print("Intersección en X: (", x_intercept_x, ",", y_intercept_x, ")")
 
 #------------------------------------ Fin del Ejercicio 10 ------------------------------------#
-
 
 #------------------------------------ Inicio del Ejercicio 11 ------------------------------------#
 
@@ -187,12 +217,36 @@ print('\nCalcula la pendiente y las intersecciones de la recta y = 2x - 2')
 # Calcular la pendiente (slope) usando la fórmula m = (y2 - y1) / (x2 - x1)
 # y la distancia euclidiana entre los puntos (2, 2) y (6, 10).
 
+# Aquí colocarás la entrada de datos y cálculos
 print('\nCalcula la pendiente y la distancia euclidiana entre los puntos (2, 2) y (6, 10)')
 
-# Aquí colocarás la entrada de datos y cálculos
+# --------------------------
+# 3. DEFINICIÓN DE VARIABLES
+# --------------------------
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+
+# -----------------------------------
+# 4. CÁLCULOS MATEMÁTICOS REQUERIDOS
+# -----------------------------------
+
+# Fórmula de la pendiente
+# m = (y2 - y1) / (x2 - x1)
+
+m = (y2 - y1) / (x2 - x1)
+
+# Fórmula de distancia euclidiana
+# d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+
+d = math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2))
+
+# -------------------------
+# 5. IMPRESIÓN DE RESULTADOS
+# -------------------------
+print("Pendiente (slope):", m )          # Aquí va el resultado de m
+print("Distancia euclidiana:", d)       # Aquí va el resultado de d
 
 #------------------------------------ Fin del Ejercicio 11 ------------------------------------#
-
 
 #------------------------------------ Inicio del Ejercicio 12 ------------------------------------#
 
@@ -202,6 +256,13 @@ print('\nCalcula la pendiente y la distancia euclidiana entre los puntos (2, 2) 
 print('\nCompara las pendientes calculadas en los ejercicios anteriores')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+#Definimos variables
+
+m1 = 2   # pendiente 1
+m2 = 2   #Pendiente 2
+
+print('Las pendientes son iguales?',m1 == m2)
 
 #------------------------------------ Fin del Ejercicio 12 ------------------------------------#
 
@@ -216,6 +277,12 @@ print('\nCalcula y = x^2 + 6x + 9 para distintos valores de x y encuentra cuando
 
 # Aquí colocarás la entrada de datos y cálculos
 
+x= 1
+
+y = (x**2) + (6*x) + 9
+
+print(f'El valor de y es igual a:{y}')
+
 #------------------------------------ Fin del Ejercicio 13 ------------------------------------#
 
 
@@ -228,6 +295,17 @@ print('\nEncuentra la longitud de "python" y "dragon" y realiza una comparación
 
 # Aquí colocarás la entrada de datos y cálculos
 
+med1 = ('dragon')
+med2 = ('python')
+
+log1 = len(med1)
+log2 = len(med2)
+
+print(f'La longitud de {med1} es igual a: {log1}')
+print(f'La longitud de {med2} es igual a: {log2}')
+
+print(f'{med1}>{med2}',log1 > log2)
+
 #------------------------------------ Fin del Ejercicio 14 ------------------------------------#
 
 
@@ -239,6 +317,14 @@ print('\nEncuentra la longitud de "python" y "dragon" y realiza una comparación
 print('\nVerifica si "on" está en ambas palabras "python" y "dragon" usando el operador and')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+r1 = ('on' in 'dragon')
+r2 = ('on' in 'python')
+
+print('se encuentra on en la palabra dragon?:', r1)
+print('se encuentra on en la palabra python?:', r2)
+
+print('on se encuentra tanto en python como en dragon?', r1 and r2)
 
 #------------------------------------ Fin del Ejercicio 15 ------------------------------------#
 
@@ -253,6 +339,13 @@ print('\nVerifica si la palabra "jargon" está en la oración usando el operador
 
 # Aquí colocarás la entrada de datos y cálculos
 
+pal1 = 'jargon'
+pal2 = 'I hope this course is not full of jargon.'
+
+print('La oraacion es:', pal2)
+print(f'¿La palabra "{pal1}" se encuentra en la oración? ->', pal1 in pal2)
+
+
 #------------------------------------ Fin del Ejercicio 16 ------------------------------------#
 
 
@@ -262,6 +355,13 @@ print('\nVerifica si la palabra "jargon" está en la oración usando el operador
 # Verificar si no existe la cadena 'on' en ambas palabras 'dragon' y 'python'.
 
 print('\nVerifica que no exista "on" en ambas palabras "dragon" y "python"')
+
+r1 = ('on' in 'dragon')
+r2 = ('on' in 'python')
+
+r3 = not(r1 and r2)
+
+print('La palabra on no existe en las palabras dragon y python?', r3 )
 
 # Aquí colocarás la entrada de datos y cálculos
 
@@ -277,6 +377,12 @@ print('\nCalcula la longitud de "python", conviértela a float y luego a string'
 
 # Aquí colocarás la entrada de datos y cálculos
 
+pal = len('python')
+pal = float(pal)
+pal = str(pal)
+
+print(f'La palabra python es de tipo:', type(pal))
+
 #------------------------------------ Fin del Ejercicio 18 ------------------------------------#
 
 
@@ -289,8 +395,18 @@ print('\nVerifica si un número es par o no')
 
 # Aquí colocarás la entrada de datos y cálculos
 
-#------------------------------------ Fin del Ejercicio 19 ------------------------------------#
+print('Ingresa un numero para determinar si es par o no')
 
+num = int(input('Ingresa un numero porfavor: '))
+num1 = int(num / 2)#Sin usar % que saca automaticamente el residuo
+num2 = int(num1 * 2)
+num3 = int(num - num2)
+fin = bool(num3 == 0)
+
+print('Tu numero es par?:', fin )
+
+
+#------------------------------------ Fin del Ejercicio 19 ------------------------------------#
 
 #------------------------------------ Inicio del Ejercicio 20 ------------------------------------#
 
@@ -299,7 +415,16 @@ print('\nVerifica si un número es par o no')
 
 print('\nVerifica si la división entera de 7 entre 3 es igual al valor entero de 2.7')
 
-# Aquí colocarás la entrada de datos y cálculos
+# Cálculos
+d = int(7 / 3)     # División 7 entre 3, convertida a entero
+v = int(2.7)       # Conversión directa a entero
+
+# Mostrar resultados intermedios
+print('La división entera de 7 entre 3 es igual a:', d)
+print('El valor entero de 2.7 es igual a:', v)
+
+# Comparación
+print('¿Son iguales?:', d == v)
 
 #------------------------------------ Fin del Ejercicio 20 ------------------------------------#
 
@@ -313,6 +438,12 @@ print('\nVerifica si el tipo de dato de "10" es igual al tipo de dato de 10')
 
 # Aquí colocarás la entrada de datos y cálculos
 
+d1 = str('10')
+d2 = int('10')
+
+
+print('10(cadena) es igual a 10(entero)?:', d1 == d2)
+
 #------------------------------------ Fin del Ejercicio 21 ------------------------------------#
 
 
@@ -324,6 +455,9 @@ print('\nVerifica si el tipo de dato de "10" es igual al tipo de dato de 10')
 print('\nVerifica si int("9.8") es igual a 10')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+num1 = print('El entero de 9.8 es: ', int(9.8))
+print('El entero de 9.8 es igual a 10?: ', (num1 == 10))
 
 #------------------------------------ Fin del Ejercicio 22 ------------------------------------#
 
@@ -338,6 +472,17 @@ print('\nCalcula el pago semanal según horas trabajadas y tarifa por hora')
 
 # Aquí colocarás la entrada de datos y cálculos
 
+h = int(input('Cuantas horas trabajas al dia?: '))
+d = int(input('cuantos dias a la semana trabajas?: '))
+t = int(input('Cuanto te pagan por hora?: '))
+
+salariod = (h * t)
+salarios = (salariod * d)
+
+print(f'Si trabajaste {h} horas a {t} la hora te pagaran el dia a:', salariod)
+print(f'Si trabajas {d} dias en  la semana te pagaran:', salarios)
+
+
 #------------------------------------ Fin del Ejercicio 23 ------------------------------------#
 
 
@@ -350,6 +495,15 @@ print('\nCalcula el pago semanal según horas trabajadas y tarifa por hora')
 print('\nCalcula cuántos segundos ha vivido una persona según años de vida')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+years = int(input('Cuantos años haz vivido?: '))
+
+d = (years * 365 )
+h = (d * 24)
+m = (h * 60)
+s = (m * 60)
+
+print(f'Has vivido {years} que equivalen a {d} dias, {h} horas, {m} minutos y {s} segundos')
 
 #------------------------------------ Fin del Ejercicio 24 ------------------------------------#
 
@@ -367,6 +521,12 @@ print('\nCalcula cuántos segundos ha vivido una persona según años de vida')
 print('\nMuestra la tabla solicitada')
 
 # Aquí colocarás la entrada de datos y cálculos
+
+print(1, 1, 1**1, 1**2, 1**3)
+print(2, 1, 2**1, 2**2, 2**3)
+print(3, 1, 3**1, 3**2, 3**3)
+print(4, 1, 4**1, 4**2, 4**3)
+print(5, 1, 5**1, 5**2, 5**3)
 
 #------------------------------------ Fin del Ejercicio 25 ------------------------------------#
 
