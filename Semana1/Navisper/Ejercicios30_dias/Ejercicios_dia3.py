@@ -28,21 +28,61 @@ import math
 #   resta = A - B
 #   multiplicación = A * B
 #   división = A / B
+print("--------------------------------- Ejercicio 1 -------------------------------- \n")
+
+print("Ejercicio 1: Suma, Resta, Multiplicación y División")
+
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+suma = a + b
+resta = a - b
+multiplicacion = a * b
+division = a / b
+print(f"Suma: {suma} Resta: {resta} Multiplicación: {multiplicacion} División: {division}")
+
+print("Ejercicio 1: Fin \n")
+print("-------------------------------------------------------------------------------- \n")
+
 # ------------------------------------------ Fin Ejercicio 1 ------------------------------------------ #
 
 # ----------------------------------------- Inicio Ejercicio 2 ----------------------------------------- #
 # Convertir grados Fahrenheit a grados Celsius
 # Fórmula: °C = (°F - 32) / 1.8
+print("--------------------------------- Ejercicio 2 -------------------------------- \n")
+print("Ejercicio 2: Conversión de Fahrenheit a Celsius")
+fahrenheit = float(input("Ingrese la temperatura en Fahrenheit: "))
+celsius = (fahrenheit - 32) / 1.8
+print(f"Temperatura en Celsius: {celsius:.2f} °C")
+print("Ejercicio 2: Fin \n")
+print("-------------------------------------------------------------------------------- \n")
 # ------------------------------------------ Fin Ejercicio 2 ------------------------------------------ #
 
 # ----------------------------------------- Inicio Ejercicio 3 ----------------------------------------- #
 # Calcular el índice de masa corporal (IMC)
 # Fórmula: IMC = peso / (altura ** 2)
+print("--------------------------------- Ejercicio 3 -------------------------------- \n")
+print("Ejercicio 3: Cálculo del IMC")
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en metros: "))
+imc = peso / (altura ** 2)
+print(f"Su IMC es: {imc:.2f}")
+print("Ejercicio 3: Fin \n")
+print("-------------------------------------------------------------------------------- \n")
 # ------------------------------------------ Fin Ejercicio 3 ------------------------------------------ #
 
 #-------------------------------------- Inicio del Ejercicio 4 --------------------------------------#
 # Calcular la hipotenusa de un triángulo dados dos catetos A y B
 # Fórmula: c = √(a² + b²)
+print("--------------------------------- Ejercicio 4 -------------------------------- \n")
+print("Ejercicio 4: Cálculo de la Hipotenusa")
+a = float(input("Ingrese el cateto A: "))
+b = float(input("Ingrese el cateto B: "))
+
+hipotenusa = math.sqrt(a**2 + b**2)
+print(f"La hipotenusa es: {hipotenusa:.2f}")
+print("Ejercicio 4: Fin \n")
+print("-------------------------------------------------------------------------------- \n")
+
 #-------------------------------------- Fin del Ejercicio 4 --------------------------------------#
 
 #------------------------------------ Inicio del Ejercicio 5 ------------------------------------#
@@ -52,6 +92,21 @@ import math
 #   usd_soles = soles / tasa_soles
 #   usd_reales = reales / tasa_reales
 #   total_usd = usd_pesos + usd_soles + usd_reales
+print("--------------------------------- Ejercicio 5 -------------------------------- \n")
+print("Ejercicio 5: Conversión de monedas a USD")
+pesos = float(input("Ingrese la cantidad en pesos colombianos: "))
+soles = float(input("Ingrese la cantidad en soles: "))
+reales = float(input("Ingrese la cantidad en reales: "))
+tasa_pesos = 4000  # Ejemplo de tasa de cambio
+tasa_soles = 3.5  # Ejemplo de tasa de cambio
+tasa_reales = 5.2  # Ejemplo de tasa de cambio
+usd_pesos = pesos / tasa_pesos
+usd_soles = soles / tasa_soles
+usd_reales = reales / tasa_reales
+total_usd = usd_pesos + usd_soles + usd_reales
+print(f"Total en USD: {total_usd:.2f}")
+print("Ejercicio 5: Fin \n")
+print("-------------------------------------------------------------------------------- \n")
 #-------------------------------------- Fin del Ejercicio 5 --------------------------------------#
 
 #------------------------------------ Inicio del Ejercicio 6 ------------------------------------#
