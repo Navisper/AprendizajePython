@@ -1,6 +1,6 @@
 #asi se hace un comentario
 #hola mundo en python
-print('jelou guorld')
+print('jelou guorld sapos')
 
 """
 Este es un comentario
